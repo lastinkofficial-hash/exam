@@ -320,6 +320,8 @@ button:focus {
     cursor: pointer;
     padding: 10px 0; }
 
+
+
 /* Banner */
 
 .overlay-container {
@@ -1029,7 +1031,7 @@ button:focus {
     opacity: 0.6; }
 
 /*============ blog_left_sidebar css ==============*/
-/* .blog_item {
+.blog_item {
   margin-bottom: 40px; }
 
 .blog_info {
@@ -1290,10 +1292,10 @@ button:focus {
   color: #fff;
   text-decoration: none;
   background: #fdc632;
-  border-color: #eee; } */
+  border-color: #eee; }
 
 /*============ Start Blog Single Styles  =============*/
-/* .single-post-area .social-links {
+.single-post-area .social-links {
   padding-top: 10px;
   padding-left: 0px; }
   .single-post-area .social-links li {
@@ -1477,29 +1479,29 @@ button:focus {
       border: 1px solid #eee; }
   .comment-form textarea.form-control {
     height: 140px;
-    resize: none; } */
-  /* .comment-form ::-webkit-input-placeholder { */
+    resize: none; }
+  .comment-form ::-webkit-input-placeholder {
     /* Chrome/Opera/Safari */
-    /* font-size: 15px;
+    font-size: 15px;
     color: #777; }
-  .comment-form ::-moz-placeholder { */
+  .comment-form ::-moz-placeholder {
     /* Firefox 19+ */
-    /* font-size: 15px;
+    font-size: 15px;
     color: #777; }
-  .comment-form :-ms-input-placeholder { */
+  .comment-form :-ms-input-placeholder {
     /* IE 10+ */
-    /* font-size: 15px;
+    font-size: 15px;
     color: #777; }
-  .comment-form :-moz-placeholder { */
+  .comment-form :-moz-placeholder {
     /* Firefox 18- */
-    /* font-size: 15px;
-    color: #777; } */
+    font-size: 15px;
+    color: #777; }
 
 /*============ End Blog Single Styles  =============*/
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== contact_area css ================*/
-/* .mapBox {
+.mapBox {
   height: 420px;
   margin-bottom: 80px; }
 
@@ -1558,11 +1560,11 @@ button:focus {
       height: 140px; }
 .contact_form .primary-btn {
   margin-top: 20px;
-  cursor: pointer; } */
+  cursor: pointer; }
 
 /* Contact Success and error Area css
 ============================================================================================ */
-/* .modal-message .modal-dialog {
+.modal-message .modal-dialog {
   position: absolute;
   top: 36%;
   left: 50%;
@@ -1591,14 +1593,14 @@ button:focus {
       padding-bottom: 10px;
       font-family: "Roboto", sans-serif; }
     .modal-message .modal-dialog .modal-content .modal-header p {
-      display: block; } */
+      display: block; }
 
 /* End Contact Success and error Area css
 ============================================================================================ */
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
 /*============== Elements Area css ================*/
-/* .mb-20 {
+.mb-20 {
   margin-bottom: 20px; }
 
 .mb-30 {
@@ -1625,11 +1627,11 @@ button:focus {
     .sample-text-area p del {
       color: #fdc632; }
     .sample-text-area p u {
-      color: #fdc632; } */
+      color: #fdc632; }
 
 /*============== End Elements Area css ================*/
 /*==============Elements Button Area css ================*/
-/* .elements_button .title_color {
+.elements_button .title_color {
   margin-bottom: 30px;
   color: #002347; }
 
@@ -1756,14 +1758,14 @@ button:focus {
 .general {
   line-height: 38px;
   padding-top: 0px;
-  padding-bottom: 0px; } */
+  padding-bottom: 0px; }
 
 /*==============End Elements Button Area css ================*/
 /* =================================== */
 /*  Elements Page Styles
 /* =================================== */
 /*---------- Start Elements Page -------------*/
-/* .generic-banner {
+.generic-banner {
   margin-top: 60px;
   text-align: center; }
 
@@ -1807,10 +1809,10 @@ button:focus {
   margin-bottom: 10px; }
 
 .switch-wrap p {
-  margin: 0; } */
+  margin: 0; }
 
 /*---------- End Elements Page -------------*/
-/* .sample-text-area {
+.sample-text-area {
   padding: 100px 0 70px 0; }
 
 .sample-text {
@@ -2513,7 +2515,7 @@ h6 {
   color: #002347; }
 
 .primary-checkbox input:checked + label {
-  background: url(../img/elements/primary-check.png) no-repeat center center/cover;
+  /* background: url(../img/elements/primary-check.png) no-repeat center center/cover; */
   border: none; }
 
 .confirm-checkbox {
@@ -2547,7 +2549,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-checkbox input:checked + label {
-  background: url(../img/elements/success-check.png) no-repeat center center/cover;
+  /* background: url(../img/elements/success-check.png) no-repeat center center/cover; */
   border: none; }
 
 .disabled-checkbox {
@@ -2585,7 +2587,7 @@ h6 {
   z-index: 3; }
 
 .disabled-checkbox input:checked + label {
-  background: url(../img/elements/disabled-check.png) no-repeat center center/cover;
+  /* background: url(../img/elements/disabled-check.png) no-repeat center center/cover; */
   border: none; }
 
 .primary-radio {
@@ -2619,7 +2621,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .primary-radio input:checked + label {
-  background: url(../img/elements/primary-radio.png) no-repeat center center/cover;
+  /* background: url(../img/elements/primary-radio.png) no-repeat center center/cover; */
   border: none; }
 
 .confirm-radio {
@@ -2653,7 +2655,7 @@ h6 {
   border: 1px solid #f1f1f1; }
 
 .confirm-radio input:checked + label {
-  background: url(../img/elements/success-radio.png) no-repeat center center/cover;
+  /* background: url(../img/elements/success-radio.png) no-repeat center center/cover; */
   border: none; }
 
 .disabled-radio {
@@ -2700,7 +2702,7 @@ h6 {
   padding: 0px; }
 
 .disabled-radio input:checked + label {
-  background: url(../img/elements/disabled-radio.png) no-repeat center center/cover;
+  /* background: url(../img/elements/disabled-radio.png) no-repeat center center/cover; */
   border: none; }
 
 .default-select {
@@ -2799,7 +2801,7 @@ h6 {
   font-weight: 300; }
 
 .form-select .nice-select::after {
-  right: 20px; } */
+  right: 20px; }
 
 /*---------------------------------------------------- */
 /*----------------------------------------------------*/
@@ -2905,6 +2907,24 @@ h6 {
 	============================================================================================ */
   /* Home Banner Area css
 	============================================================================================ */
+
+  /* About banner  */
+  .img-banner {
+    background: url(img/banner.jpg) no-repeat center center/cover; 
+  padding: 50px;}
+
+  .img-banner::before {
+    content: "";
+      opacity: 0.5;
+      /* height: 46%; */
+      /* position: absolute; */
+      left: 0px;
+      top: 0px;
+      width: 100%;
+      z-index: 10;
+      background-color: #00234d;
+    }
+
   .home_banner_area .banner_inner {
     padding: 100px 0px; }
 
@@ -3097,6 +3117,13 @@ h6 {
 
   /* Home Banner Area css
 	============================================================================================ */
+  .home_banner_area {
+  z-index: 1;
+  min-height: 900px;
+  position: relative;
+  background: url(img/home-banner.jpg) no-repeat center;
+  background-size: cover;  
+}
   .home_banner_area .banner_inner .banner_content h2 {
     font-size: 40px;
     line-height: 44px; }

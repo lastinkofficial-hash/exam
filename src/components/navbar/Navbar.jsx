@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import logo from '../../img/logo.png';
+import { Link } from "react-router-dom";
 
 
 const Navbar = () => {
@@ -24,7 +25,7 @@ const Navbar = () => {
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             {/* <!-- Brand and toggle get grouped for better mobile display --> */}
-            <a class="navbar-brand logo_h" href="index.html"><img src={logo} alt=""/></a>
+            <Link class="navbar-brand logo_h" to="/"><img src={logo} alt=""/></Link>
             
             <button
               class="navbar-toggler"
@@ -35,30 +36,32 @@ const Navbar = () => {
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="bi bi-list"></span>
+              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
             {/* <!-- Collect the nav links, forms, and other content for toggling --> */}
             <div
-              class="collapse navbar-collapse offset"
+              class="collapse navbar-collapse offset pb-3 pb-lg-0"
               id="navbarSupportedContent">
               <ul class="nav navbar-nav menu_nav ms-auto ">
                 <li class="nav-item active">
-                  <a class="nav-link" href="index.html">Home</a>
+                  <Link class="nav-link" to="/">Home</Link>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about-us.html">About</a>
+                  <Link class="nav-link" to="/about">About</Link>
                 </li>
                 <li class="nav-item submenu dropdown">
-                  <a
+                  <Link
                     href="#"
                     class="nav-link dropdown-toggle"
                     data-bs-toggle="dropdown"
                     role="button"
                     aria-haspopup="true"
-                    aria-expanded="false">Pages</a>
+                    aria-expanded="false">Pages</Link>
                   <ul class="dropdown-menu">
                     <li class="nav-item">
-                      <a class="nav-link" href="courses.html">Courses</a>
+                      <Link class="nav-link" to="/Cources">Courses</Link>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="course-details.html"

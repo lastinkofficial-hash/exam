@@ -1,26 +1,23 @@
 import logo from './logo.svg';
 import './App.css';
+
+import { Route, Routes } from 'react-router-dom';
+import Home from './pages/Home';
+import About from './pages/About';
+import Cources from './pages/Cources';
 import Navbar from './components/navbar/Navbar';
-import Banner from './components/index/banner';
-import Features from './components/index/features';
-import PopularCourses from './components/index/popularcourses';
-import Promo1 from './components/index/promo1';
-import Trainer from './components/index/traniner';
-import Events from './components/index/events';
-import Testimonial from './components/index/testimonial';
 import Footer from './components/footer/fooret';
+
 
 function App() {
   return (
     <>
     <Navbar/>
-    <Banner/>
-    <Features/>
-    <PopularCourses/>
-    <Promo1/>
-    <Trainer/>
-    <Events/>
-    <Testimonial/>
+    <Routes>
+      <Route path="/" element={<Home/>}/>
+      <Route path="/about" element={<About/>}/>
+      <Route path="/cources" element={<Cources/>}/>
+    </Routes>
     <Footer/>
     </>
   );

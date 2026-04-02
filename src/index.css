@@ -158,7 +158,7 @@ button:focus {
   z-index: 99;
   transition: background 0.4s, all 0.3s linear; }
   .header_area .navbar {
-    background: transparent;
+    background: #0000000d;
     padding: 0px;
     border: 0px;
     border-radius: 0px; }
@@ -176,7 +176,8 @@ button:focus {
         .header_area .navbar .nav .nav-item .nav-link:after {
           display: none; }
       .header_area .navbar .nav .nav-item:hover .nav-link, .header_area .navbar .nav .nav-item.active .nav-link {
-        color: #fdc632; }
+        color: #fdc632; 
+      font-weight: bold;}
       .header_area .navbar .nav .nav-item.submenu {
         position: relative; }
         .header_area .navbar .nav .nav-item.submenu ul {
@@ -357,7 +358,7 @@ button:focus {
 
 /* Text animation */
 .overlay-content {
-  color: white;
+  /* color: white; */
   text-align: center;
   opacity: 0;
   transform: translateY(20px);
@@ -3218,6 +3219,9 @@ h6 {
     .footer-area .single-footer-widget input:focus {
       outline: none;
       box-shadow: none; }
+  .footer-area .single-footer-widget input::placeholder{
+    color: #fff;
+  }
   .footer-area .single-footer-widget .click-btn {
     background: #fdc632;
     background-size: 200% auto;
@@ -3259,7 +3263,7 @@ h6 {
         display: inline-table;
         height: 40px;
         text-align: center;
-        padding-top: 10px;
+        padding-top: 5px;
         -webkit-transition: all 0.3s ease 0s;
         -moz-transition: all 0.3s ease 0s;
         -o-transition: all 0.3s ease 0s;

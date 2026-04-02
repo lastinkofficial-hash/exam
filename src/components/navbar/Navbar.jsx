@@ -1,13 +1,26 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import logo from '../../img/logo.png';
 
 
 const Navbar = () => {
-  return (
-    <header class="header_area">
-      <div class="main_menu">
-        
+  const [isFixed, setIsFixed] = useState(false);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsFixed(true);
+      } else {
+        setIsFixed(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <header className={`header_area ${isFixed ? "navbar_fixed" : ""}`}>
+      <div class="main_menu">
         <nav class="navbar navbar-expand-lg navbar-light">
           <div class="container">
             {/* <!-- Brand and toggle get grouped for better mobile display --> */}

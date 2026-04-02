@@ -1,35 +1,35 @@
 import React from "react";
-
+import banner1 from '../../img/home-banner.jpg';
 
 
 const Banner = () => {
     const slidesData = [
   {
-    img: "https://res.cloudinary.com/dodhn4tgj/image/upload/w_1200,f_auto,q_auto,c_fill/v1774787114/img4_r8qe0c.jpg",
-    title: "Welcome to Our Clinic",
+    img: banner1,
+    title: "Welcome to Our Coaching",
     desc: "We provide the best healthcare services",
-    btn: "Book Appointment",
+    btn: "Register Now",
   },
   {
-    img: 'https://res.cloudinary.com/dodhn4tgj/image/upload/v1774787112/img1_enrghm.jpg',
-    title: "Expert Doctors",
+    img: banner1,
+    title: "Expert Teachers",
     desc: "Highly qualified and experienced team",
-    btn: "Meet Doctors",
+    btn: "Meet Our Team",
   },
   {
-    img: 'https://res.cloudinary.com/dodhn4tgj/image/upload/v1774787113/img3_fxanyq.jpg', 
-    title: "Advanced Treatments",
-    desc: "Latest technology and modern care",
+    img: banner1, 
+    title: "Advanced Facilities",
+    desc: "Latest technology and modern techniques",
     btn: "Explore Services",
   },
   {
-    img:"https://res.cloudinary.com/dodhn4tgj/image/upload/v1774787112/img2_e5aia9.jpg",
-    title: "Patient First Approach",
-    desc: "Your health is our priority",
+    img: banner1,
+    title: "Learner First Approach",
+    desc: "Your Success is our priority",
     btn: "Learn More",
   },
   {
-    img: "https://res.cloudinary.com/dodhn4tgj/image/upload/v1774787112/img5_fabma0.jpg",
+    img: banner1,
     title: "24/7 Support",
     desc: "We are always here for you",
     btn: "Contact Us",

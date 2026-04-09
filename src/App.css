@@ -28,6 +28,32 @@
   color: #61dafb;
 }
 
+.checkout_area {
+  background: #f8f9fa;
+}
+
+.checkout_area .bg-white {
+  border: 1px solid #e9ecef;
+}
+
+.checkout_area .order_summary .list-group-item {
+  border: none;
+  border-bottom: 1px solid #f1f3f5;
+}
+
+.checkout_area .order_summary .list-group-item:last-child {
+  border-bottom: 0;
+}
+
+.checkout_area .order_summary h5,
+.checkout_area .order_summary h3 {
+  color: #212529;
+}
+
+.checkout_area .order_summary .text-warning {
+  color: #d39e00 !important;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

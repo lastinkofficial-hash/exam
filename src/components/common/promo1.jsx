@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Promo1 = () => {
   return (
@@ -33,50 +34,12 @@ const Promo1 = () => {
               </div>
             </div>
           </div>
-          <div className="col-lg-4 offset-lg-1">
-            <div className="register_form p-4 p-lg-5 bg-white rounded shadow">
-              <h3 className="text-center fw-bold">Courses for Free</h3>
-              <p className="text-center text-muted">It is high time for learning</p>
-              <form
-                className="form_area mt-4"
-                id="myForm"
-              >
-                <div className="row">
-                  <div className="col-lg-12">
-                    <div className="mb-3">
-                      <input
-                        name="name"
-                        placeholder="Your Name"
-                        required
-                        type="text"
-                        className="form-control"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        name="phone"
-                        placeholder="Your Phone Number"
-                        required
-                        type="tel"
-                        className="form-control"
-                      />
-                    </div>
-                    <div className="mb-3">
-                      <input
-                        name="email"
-                        placeholder="Your Email Address"
-                        pattern="[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{1,63}$"
-                        required
-                        type="email"
-                        className="form-control"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-lg-12 text-center">
-                    <button className="btn btn-warning w-100 py-2">Submit</button>
-                  </div>
-                </div>
-              </form>
+          <div className="col-lg-4 offset-lg-1 d-flex align-items-center justify-content-center">
+            <div className="p-4 p-lg-5 bg-white rounded shadow text-center w-100">
+              <h3 className="fw-bold mb-4">Ready to Learn?</h3>
+              <Link to="/courses" className="btn btn-warning w-100 py-3 fw-bold fs-5">
+                Explore Courses
+              </Link>
             </div>
           </div>
         </div>

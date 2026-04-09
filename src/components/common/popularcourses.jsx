@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { CartContext } from '../navbar/CartContext';
 
 // It's better to import images in React
 import course1 from '../../img/c1.jpg';
@@ -60,6 +61,14 @@ const coursesData = [
 ];
 
 const PopularCourses = () => {
+  const { addToCart } = useContext(CartContext);
+
+  const handleAddToCart = (e, course) => {
+    e.preventDefault();
+    addToCart(course);
+    alert(`${course.title} added to cart!`);
+  };
+
   return (
     <section className="popular_courses py-5">
       <div className="container">
@@ -103,6 +112,10 @@ const PopularCourses = () => {
                       </span>
                     </div>
                   </div>
+                  
+                  <button className="btn btn-outline-warning w-100 mt-4 fw-bold shadow-sm" onClick={(e) => handleAddToCart(e, course)}>
+                    <i className="bi bi-cart-plus me-2"></i> Add to Cart
+                  </button>
                 </div>
               </div>
             </div>

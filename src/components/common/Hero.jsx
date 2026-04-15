@@ -23,7 +23,7 @@ const Hero = ({ title }) => {
     <section 
       className="banner_area img-banner"
       style={{
-        backgroundImage: `url(${bgImage})`,
+        backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${bgImage})`,
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat',
@@ -37,10 +37,10 @@ const Hero = ({ title }) => {
           <div className="row justify-content-center">
             <div className="col-lg-6">
               <div className="banner_content text-center">
-                <h2 className="mb-3 fw-bold display-5">{pageTitle}</h2>
-                <div className="page_link d-flex justify-content-center align-items-center gap-3">
-                  <Link to="/" className="text-decoration-none text-dark fs-5">Home</Link>/
-                  <Link to={location.pathname} className="text-decoration-none text-dark fs-5">{pageTitle}</Link>
+                <h2 className="mb-3 fw-bold text-light display-5">{pageTitle}</h2>
+                <div className="page_link d-flex text-light justify-content-center align-items-center gap-3">
+                  <Link to="/" className="text-decoration-none text-light fs-5">Home</Link>/
+                  <Link to={location.pathname} className="text-decoration-none text-warning fs-5">{pageTitle}</Link>
                 </div>
               </div>
             </div>

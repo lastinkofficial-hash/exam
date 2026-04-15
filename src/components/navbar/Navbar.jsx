@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import logo from '../../img/logo.png';
 import { Link } from "react-router-dom";
-import Registration from '../common/Registration';
 import Login from '../common/Login';
 import ForgotPassword from '../common/ForgotPassword';
 import { CartContext } from './CartContext';
@@ -9,7 +8,6 @@ import { CartContext } from './CartContext';
 
 const Navbar = () => {
   const [isFixed, setIsFixed] = useState(false);
-  const [showModal, setShowModal] = useState(false);
   const [showLoginModal, setShowLoginModal] = useState(false);
   const [showForgotModal, setShowForgotModal] = useState(false);
 
@@ -103,9 +101,9 @@ const Navbar = () => {
                   <button className="btn text-dark btn-light fw-bold px-4 me-2" onClick={() => setShowLoginModal(true)}>
                     Login
                   </button>
-                  <button className="btn btn-warning fw-bold px-4" onClick={() => setShowModal(true)}>
+                  <Link to="/register" className="btn btn-warning fw-bold px-4">
                     Register
-                  </button>
+                  </Link>
                 </li>
               </ul>
             </div>
@@ -113,22 +111,6 @@ const Navbar = () => {
           </div>
         </nav>
       </div>
-
-      {/* Registration Modal */}
-      {showModal && (
-        <div className="modal show d-block" style={{ backgroundColor: 'rgba(0,0,0,0.5)', zIndex: 1050, overflowY: 'auto' }} tabIndex="-1" onClick={() => setShowModal(false)}>
-          <div className="modal-dialog modal-lg modal-dialog-centered" onClick={(e) => e.stopPropagation()}>
-            <div className="modal-content overflow-hidden border-0">
-              <div className="modal-header border-0 p-0 position-absolute end-0" style={{ zIndex: 10 }}>
-                <button type="button" className="btn-close m-3 shadow-none" onClick={() => setShowModal(false)} aria-label="Close"></button>
-              </div>
-              <div className="modal-body p-0">
-                <Registration />
-              </div>
-            </div>
-          </div>
-        </div>
-      )}
 
       {/* Login Modal */}
       {showLoginModal && (

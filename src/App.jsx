@@ -11,6 +11,7 @@ import Cart from './pages/Cart';
 import Checkout from './pages/Checkout';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/fooret';
+import RegistrationPage from "./pages/RegistrationPage";
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
       <Route path="/cart" element={<Cart/>}/>
       <Route path="/checkout" element={<Checkout/>}/>
       <Route path="/contact" element={<Contact/>}/>
+      <Route path="/register" element={<RegistrationPage/>}/>
     </Routes>
     <Footer/>
     </>
